@@ -1,5 +1,0 @@
-[1, 2, 3, 4]
-[1, 2, 3, 4]
-[888, 999, 2222, 331231, 2193798]
-Can only enter space-separated integers!
-Can only enter space-separated integers!
