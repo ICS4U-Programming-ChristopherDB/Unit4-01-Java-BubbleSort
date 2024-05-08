@@ -70,16 +70,16 @@ public final class BubbleSort {
    * @return
    */
   private static int[] BubbleSorter(int[] arr) {
-    for (int i = 0; i < arr.length; i++) {
-      for (int j = 0; j < arr.length; j++) {
+    for (int i = 0; i < arr.length-1; i++) {
+      for (int j = 0; j < arr.length-1-i; j++) {
         /*
-         * Swap the numbers in the array if the the first
-         * element is less than the next.
+         * Swap the numbers in the array if the next element is
+         * less than the current element.
          */
-        if (arr[i] < arr[j]) {
+        if (arr[j] > arr[j+1]) {
           int tempNum = arr[j];
-          arr[j] = arr[i];
-          arr[i] = tempNum;
+          arr[j] = arr[j+1];
+          arr[j+1] = tempNum;
         }
       }
     }
